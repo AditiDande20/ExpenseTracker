@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:nestedScrollingEnabled="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txt_add_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_expense"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/ed_expense_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_add_expense"
+            android:hint="@string/expense_label"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/ed_amount"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_expense_name"
+            android:hint="@string/expense_amount"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_rupee"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:importantForAutofill="no" />
+
+
+        <EditText
+            android:id="@+id/ed_date"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_amount"
+            android:hint="@string/expense_date"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:importantForAutofill="no" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linear_category"
+            android:background="@drawable/rounded_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_date"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ed_amount"
+                android:hint="@string/category"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:enabled="false"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/btn_cancel"
+            app:layout_constraintTop_toBottomOf="@id/linear_category"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/add"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/linear_category"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/cancel"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+

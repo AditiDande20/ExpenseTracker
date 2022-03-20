@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ExpenseTracker</string>
+    <string name="expense_tracker">Expense Tracker</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="categories">Categories</string>
+    <string name="dashboard">Dashboard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="expenses">Expenses</string>
+    <string name="no_records_found">No Records Found !!!</string>
+    <string name="add_category">Add Category</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="expense_label">Expense Label</string>
+    <string name="expense_amount">Expense Amount</string>
+    <string name="expense_date">Expense Date</string>
+    <string name="category">Category</string>
+    <string name="add">ADD</string>
+    <string name="cancel">CANCEL</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="click_on_sign_in_button_below_to_proceed_with_the_app">Click on SIGN IN button below to proceed with the app.</string>
+</resources>

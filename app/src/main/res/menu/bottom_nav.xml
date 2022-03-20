@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/categories"
+        android:title="@string/categories"
+        android:icon="@drawable/ic_baseline_category"
+        />
+
+    <item
+        android:id="@+id/expenses"
+        android:title="@string/expenses"
+        android:icon="@drawable/ic_expense"
+        />
+
+    <item
+        android:id="@+id/dashboard"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_baseline_analytics"
+        />
+
+
+</menu>

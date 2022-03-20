@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "886446907541",
+    "project_id": "kotlinprojects-6fae8",
+    "storage_bucket": "kotlinprojects-6fae8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886446907541:android:7284f5857df890c9b8bb9c",
+        "android_client_info": {
+          "package_name": "com.mobile.expensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886446907541-n6he5hjd00nc90o8vlopbq521ii4phag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkrTdQl0W6Nood440XWNN6DGcmoRNqcAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886446907541-n6he5hjd00nc90o8vlopbq521ii4phag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
