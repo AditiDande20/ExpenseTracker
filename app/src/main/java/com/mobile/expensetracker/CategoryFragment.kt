@@ -2,6 +2,7 @@ package com.mobile.expensetracker
 
 import android.app.ProgressDialog
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -109,6 +110,7 @@ class CategoryFragment : Fragment() {
             }
             .addOnFailureListener {
                 progressDialog.dismiss()
+                Log.e("Aditi===>","exception in categiory ::: ${it.message}")
                 Toast.makeText(activity, "Something went wrong", Toast.LENGTH_SHORT).show()
             }
     }
